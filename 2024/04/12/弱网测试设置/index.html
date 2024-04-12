@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>HEXO设置 | 个人博客</title>
+  <title>弱网测试设置 | 个人博客</title>
 
   <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -361,21 +361,21 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('https://pica.zhimg.com/80/v2-573ac3e25de03fad9c32add5a05e5cfc_1440w.webp')">
+  background-position: center center;position: relative;background-image:url('https://pic3.zhimg.com/80/v2-5f7cb7e900b9dcf5354c3d4d2c5cc3c2_1440w.webp')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        HEXO设置
+        弱网测试设置
       </span>
     </div>
     
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> Published in：2024-03-29 |
+          <i class="fas fa-calendar"></i> Published in：2024-04-12 |
         </span>
       
 
@@ -399,25 +399,24 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <h4 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h4><p>$ hexo new post test1</p>
-<h4 id="保存文章，本地查看"><a href="#保存文章，本地查看" class="headerlink" title="保存文章，本地查看"></a>保存文章，本地查看</h4><p>$ hexo clean<br>$ hexo generate<br>$ hexo server</p>
-<h4 id="上传本地到github"><a href="#上传本地到github" class="headerlink" title="上传本地到github"></a>上传本地到github</h4><p>$ hexo clean<br>$ hexo generate<br>$ hexo deploy</p>
-<h4 id="设置主题"><a href="#设置主题" class="headerlink" title="设置主题"></a>设置主题</h4><ol>
-<li><p>下载主题到thems文件 链接： <a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
-</li>
-<li><p>在主目录下打开_config.yml文件，修改thems的值，改成要替换的主题名称，保存文件<br><img src="/2024/03/29/HEXO%E8%AE%BE%E7%BD%AE/bba19c296ddedce9580cc1170386996.png" class="lazyload placeholder" data-srcset="/2024/03/29/HEXO%E8%AE%BE%E7%BD%AE/bba19c296ddedce9580cc1170386996.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
-</li>
-<li><p>进入该主题文件下的_config.yml文件，修改内容<br><img src="/2024/03/29/HEXO%E8%AE%BE%E7%BD%AE/config%E6%96%87%E4%BB%B6.png" class="lazyload placeholder" data-srcset="/2024/03/29/HEXO%E8%AE%BE%E7%BD%AE/config%E6%96%87%E4%BB%B6.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"><br><img src="/2024/03/29/HEXO%E8%AE%BE%E7%BD%AE/config%E6%96%87%E4%BB%B61.png" class="lazyload placeholder" data-srcset="/2024/03/29/HEXO%E8%AE%BE%E7%BD%AE/config%E6%96%87%E4%BB%B61.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
-</li>
-</ol>
+        <h3 id="弱网测试设置"><a href="#弱网测试设置" class="headerlink" title="弱网测试设置"></a>弱网测试设置</h3><h4 id="什么是弱网测试"><a href="#什么是弱网测试" class="headerlink" title="什么是弱网测试"></a>什么是弱网测试</h4><pre><code>移动端的测试， 需要额外关注的场景已经远不止断网 、网络故障等情况了。弱网环境对与移动端
+</code></pre>
+<p>来 说也是非常重要的，弱网不仅要考虑各类型网络最低速率，还要结合业务场景去划分。按照移<br>动的特性来说，一般应用低于3G速率的都属于弱网。</p>
+<h4 id="如何做弱网测试"><a href="#如何做弱网测试" class="headerlink" title="如何做弱网测试"></a>如何做弱网测试</h4><pre><code>首先，要搭建弱网环境，模拟一个弱网环境。可以通过三种方式模拟弱网，第一种是使用抓包工
+</code></pre>
+<p>具 charles、fiddler进行设置；第二种是手机本身的网络设置，设置2G、3G网络；第三种是使用<br>WiFi 设置，设置上行和下载速率在50KB以下。<br>弱网测试的思路：<br>弱网功能测试：2G&#x2F;3G&#x2F;4G&#x2F; 、高延时、高丢包<br>无网状态测试：断网功能测试、本地数据存储测试<br>用户体验关注：响应时间、页面呈现、超时报错、流量等<br>网络切换测试：2G&#x2F;3G&#x2F;4G&#x2F;、上行&amp;下载速率设置<br><img src="/2024/04/12/%E5%BC%B1%E7%BD%91%E6%B5%8B%E8%AF%95%E8%AE%BE%E7%BD%AE/%E5%BC%B1%E7%BD%91%E6%B5%8B%E8%AF%95%E7%82%B9.png" class="lazyload placeholder" data-srcset="/2024/04/12/%E5%BC%B1%E7%BD%91%E6%B5%8B%E8%AF%95%E8%AE%BE%E7%BD%AE/%E5%BC%B1%E7%BD%91%E6%B5%8B%E8%AF%95%E7%82%B9.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"><br><img src="/2024/04/12/%E5%BC%B1%E7%BD%91%E6%B5%8B%E8%AF%95%E8%AE%BE%E7%BD%AE/v2-1a7bfdc8827a81f0b80a025689654bc0_r.jpg" class="lazyload placeholder" data-srcset="/2024/04/12/%E5%BC%B1%E7%BD%91%E6%B5%8B%E8%AF%95%E8%AE%BE%E7%BD%AE/v2-1a7bfdc8827a81f0b80a025689654bc0_r.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
+<h5 id="一．Fiddler设置弱网"><a href="#一．Fiddler设置弱网" class="headerlink" title="一．Fiddler设置弱网"></a>一．Fiddler设置弱网</h5><p>使用fiddler连接手机，然后点击Rules-&gt;Performance-&gt;勾选 Simulate Modem Speeds，勾选<br>之 后访问就会发现网络慢了很多；<br>设置弱网参数，Rules—&gt;Cutomize Rules，找到以下几行代码<br>if (m_SimulateModem) {<br>&#x2F;&#x2F; Delay sends by 300ms per KB uploaded. oSession[“request-trickle-delay”] &#x3D; “300”;<br>&#x2F;&#x2F; Delay receives by 150ms per KB downloaded. oSession[“response-trickle-delay”] &#x3D; “150”;<br>}<br>首先来判断m_SimulateModem是否为true（是否开启）， 也就是是否设置了弱网模式。<br>oSession[“request-trickle-delay”] &#x3D;“300”;<br>Delay sends by 300ms per KB uploaded：上传1KB内容需要300ms，转化一下上传速度：<br>1Kb&#x2F;0.3s &#x3D; 3.3KB&#x2F;s，也就是说网络上行速度只有3.3KB。<br>oSession[“response-trickle-delay”] &#x3D; “150”;<br>Delay receives by 150ms per KB downloaded：下载1KB内容需要150ms，转化后的下载速度：<br>1KB&#x2F;0.15s&#x3D;6.6KB&#x2F;s,也就是说网络下载速度只有6.6KB。</p>
+<h5 id="二．手机网路设置"><a href="#二．手机网路设置" class="headerlink" title="二．手机网路设置"></a>二．手机网路设置</h5><p>Android手机找到手机网络模式进行设置即可，不同厂商的网络模式在不同的地方，百度都可以查到<br>iOS手机需要开启手机开发者模式，进行弱网设置</p>
+<h5 id="三、WiFi设置弱网"><a href="#三、WiFi设置弱网" class="headerlink" title="三、WiFi设置弱网"></a>三、WiFi设置弱网</h5><p>手机连接WiFi，查看路由器背面管理网址，登录进入WiFi管理设置页面，找到连接的移动设备，<br>设置上行和下载速率保存即可</p>
+<h5 id="四、PC端设置弱网"><a href="#四、PC端设置弱网" class="headerlink" title="四、PC端设置弱网"></a>四、PC端设置弱网</h5><p>需要设置的网页打开F12，Network-Nothrottling进行设置.<br><img src="/2024/04/12/%E5%BC%B1%E7%BD%91%E6%B5%8B%E8%AF%95%E8%AE%BE%E7%BD%AE/7477ba358cd8e69f12b1075f26b3c24.png" class="lazyload placeholder" data-srcset="/2024/04/12/%E5%BC%B1%E7%BD%91%E6%B5%8B%E8%AF%95%E8%AE%BE%E7%BD%AE/7477ba358cd8e69f12b1075f26b3c24.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 
       </div>
       <div class="post-tags-categories">
         
         <div class="tags">
           
-            <a href="/tags/hexo/" class="">
-              hexo
+            <a href="/tags/%E5%BC%B1%E7%BD%91/" class="">
+              弱网
             </a>
           
         </div>
@@ -431,7 +430,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>link:  </strong>
-    <a href="/2024/03/29/HEXO设置/" target="_blank" title="HEXO设置">https://jiezhang5.github.io/2024/03/29/HEXO设置/</a>
+    <a href="/2024/04/12/弱网测试设置/" target="_blank" title="弱网测试设置">https://jiezhang5.github.io/2024/04/12/弱网测试设置/</a>
     </li>
     <li class="post-copyright-license">
       <strong>Copyright notice:   </strong>
@@ -449,41 +448,22 @@
 
 
 
-  
-  <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img" style="background-size: cover; 
-      background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="https://pic3.zhimg.com/80/v2-5f7cb7e900b9dcf5354c3d4d2c5cc3c2_1440w.webp" class="lazyload placeholder" data-srcset="https://pic3.zhimg.com/80/v2-5f7cb7e900b9dcf5354c3d4d2c5cc3c2_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-    </div>
-    <a href="/2024/04/12/%E5%BC%B1%E7%BD%91%E6%B5%8B%E8%AF%95%E8%AE%BE%E7%BD%AE/" class="post-nav-link">
-      <div class="title">
-        <i class="fas fa-angle-left"></i> Prev:
-        <div class="title-text">弱网测试设置</div>
-      </div>
-      
-      <!-- <div class="content">
-        弱网测试设置什么是弱网测试移动端的测试， 需要额外关注的场景已经远不止断网 、网络故障等情况了。弱网环境对与移动端
-
-来
-      </div> -->
-    </a>
-  </div>
-
 
 
   
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="https://pic3.zhimg.com/v2-a5267dfbf175991d4b3a69b41f3f678a_b.jpg" class="lazyload placeholder" data-srcset="https://pic3.zhimg.com/v2-a5267dfbf175991d4b3a69b41f3f678a_b.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="https://pica.zhimg.com/80/v2-573ac3e25de03fad9c32add5a05e5cfc_1440w.webp" class="lazyload placeholder" data-srcset="https://pica.zhimg.com/80/v2-573ac3e25de03fad9c32add5a05e5cfc_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
     </div>
-    <a href="/2024/03/29/%E8%BF%9E%E6%8E%A5%E6%89%8B%E6%9C%BA%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/" class="post-nav-link">
+    <a href="/2024/03/29/HEXO%E8%AE%BE%E7%BD%AE/" class="post-nav-link">
       <div class="title">
         Next: <i class="fas fa-angle-right"></i>
-        <div class="title-text">连接手机的几种方式</div>
+        <div class="title-text">HEXO设置</div>
       </div>
       <!-- <div class="content">
-        连接手机的几种方式WLAN 调试（Android 10 及更低版本，需要借助 USB）Android 10以及更低的版本
+        创建文章$ hexo new post test1
+保存文章，本地查看$ hexo clean$ hexo genera
       </div> -->
     </a>
   </div>
@@ -600,13 +580,6 @@
     <!-- 评论 -->
     <!-- 评论 -->
 
-  <div id="myComment">
-    
-      <div id="gitment-container"></div>
-
-    
-  </div>
-
 
 <!-- 还需要在后面这个地址里设置script, comment script in themes\hexo-theme-bamboo\layout\_partial\scripts\index.ejs -->
 
@@ -665,7 +638,7 @@
   <div class='content'>
     <div class="toc-main">
       <div class="toc-content">
-        <!-- <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0"><span class="toc-text">创建文章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%9D%E5%AD%98%E6%96%87%E7%AB%A0%EF%BC%8C%E6%9C%AC%E5%9C%B0%E6%9F%A5%E7%9C%8B"><span class="toc-text">保存文章，本地查看</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%88%B0github"><span class="toc-text">上传本地到github</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E4%B8%BB%E9%A2%98"><span class="toc-text">设置主题</span></a></li></ol> -->
+        <!-- <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%B1%E7%BD%91%E6%B5%8B%E8%AF%95%E8%AE%BE%E7%BD%AE"><span class="toc-text">弱网测试设置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%BC%B1%E7%BD%91%E6%B5%8B%E8%AF%95"><span class="toc-text">什么是弱网测试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%81%9A%E5%BC%B1%E7%BD%91%E6%B5%8B%E8%AF%95"><span class="toc-text">如何做弱网测试</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%80%EF%BC%8EFiddler%E8%AE%BE%E7%BD%AE%E5%BC%B1%E7%BD%91"><span class="toc-text">一．Fiddler设置弱网</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%8C%EF%BC%8E%E6%89%8B%E6%9C%BA%E7%BD%91%E8%B7%AF%E8%AE%BE%E7%BD%AE"><span class="toc-text">二．手机网路设置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%89%E3%80%81WiFi%E8%AE%BE%E7%BD%AE%E5%BC%B1%E7%BD%91"><span class="toc-text">三、WiFi设置弱网</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9B%9B%E3%80%81PC%E7%AB%AF%E8%AE%BE%E7%BD%AE%E5%BC%B1%E7%BD%91"><span class="toc-text">四、PC端设置弱网</span></a></li></ol></li></ol></li></ol> -->
         <div class="toc"></div>
       </div>
     </div>
@@ -1593,71 +1566,6 @@
    
 
 <!-- 评论所需js -->
-
-  
-        <script type="text/javascript">
-  var utteranceComment = {};
-
-  function check_utterance() {
-    let isDark = JSON.parse(localStorage.getItem('dark')) || JSON.parse('false');
-    if (isDark) {
-      utteranceComment.Theme = 'github-dark';
-    } else {
-      utteranceComment.Theme = 'github-light';
-    }
-
-    return document.getElementById("gitment-container");
-  }
-  comment_el = '#gitment-container';
-  load_utterance = function () {
-    if ($(comment_el).length) {
-      // 匿名函数，防止污染全局变量
-      const HEAD = check_utterance();
-
-      var utterances = document.createElement('script');
-      utterances.type = 'text/javascript';
-      utterances.async = true;
-      utterances.setAttribute('issue-term', 'pathname')
-      utterances.setAttribute('theme', utteranceComment.Theme)
-      utterances.setAttribute('repo', '')
-      utterances.crossorigin = 'anonymous';
-      utterances.src = 'https://utteranc.es/client.js';
-      // content 是要插入评论的地方
-      document.getElementById('gitment-container').appendChild(utterances);
-
-    }
-  }
-
-  function dark_utterance() {
-    const HEAD = check_utterance();
-    if (!HEAD) return;
-    const message = {
-      type: 'set-theme',
-      theme: utteranceComment.Theme
-    };
-    const utteranceIframe = document.querySelector('iframe');
-    utteranceIframe.contentWindow.postMessage(message, 'https://utteranc.es');
-  }
-
-  $(document).ready(load_utterance);
-  document.addEventListener('pjax:complete', function () {
-    load_utterance();
-  });
-
-  $('.dark').click(function () {
-    setTimeout(() => {
-      dark_utterance();
-    });
-  })
-
-</script>
-
-<style>
-  .utterances {
-    max-width: inherit !important;
-  }
-</style>
-      
 
 
 <!-- 鼠标点击特效 -->
